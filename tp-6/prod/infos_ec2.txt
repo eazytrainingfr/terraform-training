@@ -1,0 +1,1 @@
+PUBLIC IP: 52.7.79.180 ; ID: i-08b5fbf3b195e92aa ; AZ: us-east-1e; 
