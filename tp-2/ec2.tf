@@ -11,7 +11,4 @@ resource "aws_instance" "myec2" {
   tags = {
     Name = "ec2-dirane"
   }
-  root_block_device {
-    delete_on_termination = true
-  }
 }
