@@ -28,6 +28,9 @@ resource "aws_instance" "myec2" {
      host = self.public_ip
    }
    }
+  root_block_device {
+    delete_on_termination = true
+  }
 
 }
 
