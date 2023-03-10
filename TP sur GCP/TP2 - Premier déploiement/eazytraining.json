@@ -1,0 +1,12 @@
+{
+    "type": "service_account",
+    "project_id": "eazytraining",
+    "private_key_id": "07b6d9cxcxcxcx3b3b923f6b85576b3593e9f775a9",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC9WOGNS4hi3kJe\nPkW+paQEqb7WZ9Cft0Go6CsaUJ8NdO+fqEP0lR7idjSScROhVEWWgNPVIcJRRoKY\nfrimuEqBD9DNDmm3bSFboch0MoYVaRYgDWa17/9KwYmcTb4KKY78QJWIB/Ia9xxU\n5gIt76I4J9OTz1I8/ElzlzSMtPa7ted867HPQ3rDDVuhtIwnaJg7cIVCJDQsnUYt\nYvD9UBLGtWTnJdCf9ebj8iN7wRJeYlNNv4oJzQBZuPTW+RGTakxqxOhTM/1whATh\ncdsGaCxyGxrJdfYNOLRqM3N/nw+p36eXqfXiB6t4u7Ru2v8XVrKtNpAMqcwGJ5JR\ntx2K3AlbAgMBAAECggEABOxyP7KBSJI0p0Rhm5GtawJKTZij0qYOcDN1UiOwNxvd\nfUkqrIn8zxu5cJNof29JuJ5Uo9FTFGT2fBD+K+D/7aI5Jj6OiNquyDYJQzLrIf8P\nuGP7fJX8jUzsuffwOKMYWOk0WjYGrs/Sg0dQiDGX23Ohq1Fz9ypXnfNbxkrlsuop\nBdN5NdVQirai8HSBQ8Wwoe8pJLu160pbNX5Rm8rgDybxsjxsxhjshsjkshskjhhkjhsj5ONDjqOHnh7AQVmerM2tBfbzgXZ1Q9b5qXAQ/UBjqOnpeuwUBfVQuwm\nQVJqZYG7qrMjiTs/jOCkGpPEnQKBgQDMjbj1TQmvzmfol/i3jgyG1nBX8sy74MuC\n0ybCha/SmD7CPiLCfOeew5/I+OEVINZr/rEBDGmU+j2Ctbl/56pJ/2F2RYnBjw+3\n8bLruFck9wOJ6Jeam6vruvbjRXX56rVvrwxSpiWOxQS6wUDc8qFNGkwZusHvQPth\n2xHz81OYVwKBgQC5nDSiKTb+kzRo3u8j482sKb/aCP10+cF9XUoR5ILjLAo/uTw3\ncKz4RmoAnwm/QKh/vWWcT5BSc2+aBMoINOboM6ibIDlJohyBVyKdjhYxx+f58CRD\n+eKhVf5ayJWJvHD7EEPlu9OZXZLdazbXXBD23503ZqQ8MHBk/a6zO1IFDQKBgGva\nUeps6y2aPClkb8yAhlRWHrgQmih5t3RMVwR7rp/wjC6oynUXnJyWctppd2xHeydI\nDBYMcGMPqn0PyjYJdT08/St6MM8w2k3Xj8o/0Rr5bxE45S6s4/IQC3r7td/HBFFV\nz76IQgdMFFlP6h5Vg/z+X5+1W+oFrkYDVyz0YGBTAoGAXiyRc6Hy21tkofhEu/+S\nf/CnM1B2DnCIgKdmii5EIXSGpq5VCBFPYE8evDXeV78EkRxtVt9r60oIGt72lnFr\nnUETKb4mP5EaV8ng1xBWDU2Oos5I7kmzlFyfVtLnqi0VTQdjtLYHnk5i25Q6X21x\n/jEaZzJn5DU5dPmjK7bOo0o=\n-----END PRIVATE KEY-----\n",
+    "client_email": "887121805792-compute@developer.gserviceaccount.com",
+    "client_id": "117878156875982784358",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/887121805792-compute%40developer.gserviceaccount.com"
+  }
