@@ -5,8 +5,8 @@ stages:
 
 .get_credentials: &get_credentials
   before_script:
-    - echo $TF_VAR_GCLOUD_KEYFILE_JSON > ulrich.json
-    - export GOOGLE_APPLICATION_CREDENTIALS="ulrich.json"
+    - echo $TF_VAR_GCLOUD_KEYFILE_JSON > eazytraining.json
+    - export GOOGLE_APPLICATION_CREDENTIALS="eazytraining.json"
 
 
 include:

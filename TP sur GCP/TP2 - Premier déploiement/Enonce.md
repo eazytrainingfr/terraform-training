@@ -33,20 +33,20 @@
     + ##### sous Linux, macOS ou Unix, utilisez `export`:
 
     ```
-    export GOOGLE_APPLICATION_CREDENTIALS="~/.gcloud/terraform-examples-code.json"
+    export GOOGLE_APPLICATION_CREDENTIALS="/terraform/eazytraining.json"
     ```
 
     + ###### sous Windows avec `mobaxterm`, utilisez `export` et le chemin du fichier `Json`:
 
     ```
-    export GOOGLE_APPLICATION_CREDENTIALS="C:\terraform-gcp\eazytraining.json"
+    export GOOGLE_APPLICATION_CREDENTIALS="C:\terraform\eazytraining.json"
     ```
     + ###### sous Windows avec powershell, voici la commande:
     
     ```powershell
-    $env:GOOGLE_APPLICATION_CREDENTIALS = "C:\Users\IB\Desktop\terraform\tp2\ulrich.json"
+    $env:GOOGLE_APPLICATION_CREDENTIALS = "C:\terraform\eazytraining.json"
     ```
-    Un exemple de contenu du fichier `C:\terraform-gcp\eazytraining.json`est fourni avec l'énoncé.
+    Un exemple de contenu du fichier `C:\terraform\eazytraining.json`est fourni avec l'énoncé.
 
     
 - Initialiser le répertoire de travail.
