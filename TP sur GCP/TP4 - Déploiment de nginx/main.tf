@@ -14,7 +14,7 @@ resource "google_compute_instance" "default" {
   name         = "web-vm"
   machine_type = var.instance_template
   zone         = var.zone
-  tags         = ["gcp", "terraform"]
+  tags         = ["gcp", "terraform","web"]
   boot_disk {
     initialize_params {
       image = data.google_compute_image.my_image.self_link
@@ -46,7 +46,7 @@ resource "google_compute_firewall" "ssh" {
   network       = google_compute_network.vpc.id
   priority      = 1000
   source_ranges = ["0.0.0.0/0"]
-  target_tags   = ["ssh"]
+  target_tags   = ["web"]
 }
 
 resource "google_compute_firewall" "web" {
