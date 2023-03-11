@@ -46,7 +46,7 @@
     ```powershell
     $env:GOOGLE_APPLICATION_CREDENTIALS = "C:\terraform\eazytraining.json"
     ```
-    Un exemple de contenu du fichier `C:\terraform\eazytraining.json`est fourni avec l'énoncé.
+    Un exemple de contenu du fichier `C:\terraform\eazytraining.json`est fourni avec l'énoncé. C'est crédentials ne sont pas actif.
 
     
 - Initialiser le répertoire de travail.
