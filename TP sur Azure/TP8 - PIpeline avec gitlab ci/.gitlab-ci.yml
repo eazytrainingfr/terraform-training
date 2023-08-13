@@ -1,0 +1,24 @@
+stages:
+  - provision
+  - deploy
+
+
+.get_credentials: &get_credentials
+  before_script:
+    - echo $TF_VAR_GCLOUD_KEYFILE_JSON > ulrich.json
+    - export GOOGLE_APPLICATION_CREDENTIALS="ulrich.json"
+
+
+include:
+  - remote: 'https://api.r2devops.io/job/r/gitlab/r2devops/hub/gitlab-terraform_plan@0.5.1.yaml'
+  - remote: 'https://api.r2devops.io/job/r/gitlab/r2devops/hub/gitlab-terraform_apply@0.5.1.yaml'
+
+gitlab-terraform_plan:
+  variables:
+    TF_ROOT: '${CI_PROJECT_DIR}'
+  <<: *get_credentials
+
+gitlab-terraform_apply:
+  variables:
+    TF_ROOT: '${CI_PROJECT_DIR}'
+  <<: *get_credentials
