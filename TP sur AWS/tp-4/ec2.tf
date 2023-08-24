@@ -22,20 +22,17 @@ resource "aws_instance" "myec2" {
   security_groups = ["${aws_security_group.allow_ssh_http_https.name}"]
 
   provisioner "remote-exec" {
-     inline = [
-       "sudo amazon-linux-extras install -y nginx1.12",
-       "sudo systemctl start nginx"
-     ]
+    inline = [
+      "sudo amazon-linux-extras install -y nginx1.12",
+      "sudo systemctl start nginx"
+    ]
 
-   connection {
-     type = "ssh"
-     user = "ec2-user"
-     private_key = file("./devops-dirane.pem")
-     host = self.public_ip
-   }
-   }
-   root_block_device {
-    delete_on_termination = true
+    connection {
+      type        = "ssh"
+      user        = "ec2-user"
+      private_key = file("./devops-dirane.pem")
+      host        = self.public_ip
+    }
   }
 
 }
@@ -76,8 +73,8 @@ resource "aws_security_group" "allow_ssh_http_https" {
 
 resource "aws_eip" "lb" {
   instance = aws_instance.myec2.id
-  vpc      = true
+  domain   = "vpc"
   provisioner "local-exec" {
-    command = "echo PUBLIC IP: ${aws_eip.lb.public_ip} ; ID: ${aws_instance.myec2.id} ; AZ: ${aws_instance.myec2.availability_zone}; >> infos_ec2.txt"
+    command = "echo PUBLIC IP: ${self.public_ip}; ID: ${aws_instance.myec2.id}; AZ: ${aws_instance.myec2.availability_zone} > infos_ec2.txt"
   }
 }

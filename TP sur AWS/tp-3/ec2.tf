@@ -20,10 +20,6 @@ resource "aws_instance" "myec2" {
   key_name        = "devops-dirane"
   tags            = var.aws_common_tag
   security_groups = ["${aws_security_group.allow_http_https.name}"]
-  root_block_device {
-    delete_on_termination = true
-  }
-
 }
 
 resource "aws_security_group" "allow_http_https" {
@@ -44,9 +40,16 @@ resource "aws_security_group" "allow_http_https" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
+  egress {
+    from_port        = 0
+    to_port          = 0
+    protocol         = "-1"
+    cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = ["::/0"]
+  }
 }
 
 resource "aws_eip" "lb" {
   instance = aws_instance.myec2.id
-  vpc      = true
+  domain   = "vpc"
 }
